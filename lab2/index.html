@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main_style.css">
+  <title>Feedback Form</title>
+</head>
+
+<body>
+  <a class="link" href="auth.html">Форма аутентификации</a>
+
+  <h1>Форма обратной связи</h1>
+
+  <form action="http://httpbin.org/post" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="name">ФИО:</label>
+      <input type="text" id="name" name="name" placeholder="Шампаров Максим Андреевич" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="maxim@gmail.com" required>
+    </div>
+
+    <div class="form-group">
+      <label>Откуда узнали о нас:</label>
+      <input type="radio" id="radio1" name="source" value="Интернет" required checked>
+      <label for="radio1">Интернет</label>
+      <input type="radio" id="radio2" name="source" value="Рекомендация" required>
+      <label for="radio2">Рекомендация</label>
+      <input type="radio" id="radio3" name="source" value="Реклама" required>
+      <label for="radio3">Реклама</label>
+    </div>
+
+    <div class="form-group">
+      <label for="type">Тип обращения:</label>
+      <select id="type" name="type" required>
+        <option value="" disabled selected>Выберите тип</option>
+        <option value="Жалоба">Жалоба</option>
+        <option value="Предложение">Предложение</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="message">Текст сообщения:</label>
+      <textarea id="message" name="message" rows="6" placeholder="Ваш текст..." required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="attachments">Вложения:</label>
+      <input type="file" id="attachments" name="attachments" multiple>
+    </div>
+
+    <div class="form-group">
+      <input type="checkbox" id="consent" name="consent" required>
+      <label for="consent">Даю согласие на обработку персональных данных</label>
+    </div>
+
+    <button type="submit">Отправить</button>
+  </form>
+</body>
+
+</html>
