@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: #111; /* Темный фон для атмосферы */
+    color: #eee; /* Светлый текст для контраста */
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header li {
+    display: inline;
+    margin-right: 20px;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+.cursor-reaction:hover {
+    transition: color 0.5s;
+    color: #d1a958; /* Золотой цвет для акцентов */
+    text-shadow: 0 0 10px #d1a958;
+}
+
+.header {
+    font-family: 'Arial', sans-serif;
+    color: #fbf4e4;
+    padding: 20px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #d1a958; /* Золотой акцент */
+    box-shadow: 0 2px 2px #d1a958;
+    font-size: 1.1em;
+    background-color: #202020; /* Темный фон для шапки */
+    background-image: url('images/title-back.jpg');
+    background-position: center center; /* Центрирование изображения по горизонтали и вертикали */
+    background-size: cover; /* Изображение полностью покрывает доступное пространство без потери пропорций */
+    background-repeat: no-repeat; /* Предотвращение повторения изображения */
+}
+
+.main-title {
+    margin: 20px;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Impact', 'Arial', sans-serif;
+    color: #d1a958; /* Золотой цвет для заголовка */
+}
+
+.main-menu a {
+    text-decoration: none;
+    color: #fbf4e4;
+    font-weight: bold;
+    border-bottom: 2px solid #d1a958; /* Золотой акцент */
+}
+
+.email-author {
+    font-size: 16px;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: #fbf4e4;
+    border: 1px solid #d1a958; /* Золотая рамка */
+    padding: 5px;
+    background-color: #333;
+    opacity: 0.9;
+}
+
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #181818; /* Слегка светлее, чем фон body */
+    border: 1px solid #333; /* Граница контейнера */
+}
+
+.footer-wrapper {
+    font-family: 'Arial', 'Yanone Kaffeesatz', sans-serif;
+    background-color: #202020; /* Темный фон подвала */
+    color: #d1a958; /* Золотой текст */
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+img {
+    width: 100%; /* Для адаптивности */
+    max-width: 480px; /* Максимальная ширина */
+    border: 3px solid #d1a958; /* Золотая рамка */
+}
